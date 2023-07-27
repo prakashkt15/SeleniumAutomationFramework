@@ -1,0 +1,10 @@
+{
+  "firstName": "Demo",
+  "lastName": "User",
+  "country": "India",
+  "addressOne": "SanFrancisco",
+  "city": "Ferndale",
+  "state": "Karnataka",
+  "zipCode": "411001",
+  "email": "DemoUser@gmail.com"
+}
