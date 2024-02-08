@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1">
+
+    <listeners>
+        <listener class-name="org.selenium.extentReportListener.Listeners"/>
+    </listeners>
+
+    <test name="Chrome" thread-count="2" parallel="classes">
+        <parameter name="browser" value="CHROME"/>
+        <classes>
+            <class name="org.selenium.tests.GuestCheckoutTestCase"/>
+<!--            <class name="org.selenium.tests.LoginCheckoutTestCase"/>-->
+        </classes>
+    </test>
+
+    <!--<test name="Firefox" thread-count="2" parallel="methods">
+        <parameter name="browser" value="FIREFOX"></parameter>
+        <classes>
+            <class name="org.selenium.tests.GuestCheckoutTestCase"/>
+        </classes>
+    </test>-->
+</suite>
