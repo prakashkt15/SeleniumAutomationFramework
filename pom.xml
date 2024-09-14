@@ -12,8 +12,30 @@
         <maven.compiler.source>20</maven.compiler.source>
         <maven.compiler.target>20</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.plugin.validation>verbose</maven.plugin.validation>
+        <maven.plugin.validation>BRIEF</maven.plugin.validation>
     </properties>
+
+    <build>
+        <plugins>
+            <!-- Compiler Plugin to ensure Java version is set -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+                <configuration>
+                    <source>20</source> <!-- Java source version -->
+                    <target>20</target> <!-- Java target version -->
+                </configuration>
+            </plugin>
+
+            <!-- Resources Plugin to manage resources -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.3.1</version>
+            </plugin>
+        </plugins>
+    </build>
 
     <profiles>
         <profile>
@@ -29,7 +51,7 @@
                                 <!--suppress UnresolvedMavenProperty -->
                                 <browser1>${browserName1}</browser1>
                                 <!--suppress UnresolvedMavenProperty -->
-<!--                                <browser2>${browserName2}</browser2>-->
+                                <!--                                <browser2>${browserName2}</browser2>-->
                             </systemPropertyVariables>
                             <suiteXmlFiles>
                                 <suiteXmlFile>src/test/runners/sequence.xml</suiteXmlFile>
@@ -77,7 +99,7 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.16.1</version>
+            <version>4.24.0</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
@@ -109,7 +131,5 @@
             <version>1.18.30</version>
             <scope>provided</scope>
         </dependency>
-
-
     </dependencies>
 </project>
