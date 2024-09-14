@@ -3,7 +3,7 @@ package org.selenium.utils;
 import java.util.Properties;
 
 public class ConfigLoader {
-    private Properties properties;
+    private final Properties properties;
     private static ConfigLoader configLoader;
 
     private ConfigLoader() {

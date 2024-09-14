@@ -6,7 +6,7 @@ This Selenium-based test automation framework is meticulously crafted to test th
 
 ## Features
 
-- **Cross-browser Testing**: Supports multiple browsers (Chrome, Firefox, etc.) for comprehensive testing.
+- **Cross-browser Testin    g**: Supports multiple browsers (Chrome, Firefox, etc.) for comprehensive testing.
 - **Page Object Model (POM)**: Utilizes the POM design pattern for better code organization and maintenance.
 - **Test Data Management**: Efficient handling of test data for different scenarios.
 - **Parallel Execution**: Enables parallel execution of tests for faster feedback.

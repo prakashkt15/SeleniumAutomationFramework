@@ -7,8 +7,12 @@ import org.selenium.constants.DriverType;
 
 public class DriverManager {
     public WebDriver initializeDriver(String browser) {
-        WebDriver driver;
-        switch (DriverType.valueOf(browser)) {
+        WebDriver driver = switch (DriverType.valueOf(browser)) {
+            case CHROME -> new ChromeDriver();
+            case FIREFOX -> new FirefoxDriver();
+            default -> throw new IllegalArgumentException("Invalid browser name: " + browser);
+        };
+        /*switch (DriverType.valueOf(browser)) {
             case CHROME:
                 driver = new ChromeDriver();
                 break;
@@ -17,7 +21,8 @@ public class DriverManager {
                 break;
             default:
                 throw new IllegalArgumentException("Invalid browser name: " + browser);
-        }
+        }*/
+        driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
         //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         return driver;

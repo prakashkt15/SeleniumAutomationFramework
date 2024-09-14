@@ -10,6 +10,7 @@ import org.selenium.utils.ConfigLoader;
 import java.time.Duration;
 import java.util.List;
 
+//Reusable components for page objects
 public class BasePage {
     protected WebDriver driver;
     protected WebDriverWait wait;
