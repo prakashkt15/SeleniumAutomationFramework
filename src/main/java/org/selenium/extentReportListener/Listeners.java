@@ -60,7 +60,8 @@ public class Listeners extends BaseTest implements ITestListener {
     @Override
     public void onFinish(ITestContext context) {
         extentReport.flush();
-        File htmlPath = new File("D:\\SeleniumFramework\\reports\\extentReport.html");
+        String projectPath = System.getProperty("user.dir");
+        File htmlPath = new File(projectPath + "/reports/extentReport.html");
         try {
             Desktop.getDesktop().browse(htmlPath.toURI());
         } catch (IOException e) {
