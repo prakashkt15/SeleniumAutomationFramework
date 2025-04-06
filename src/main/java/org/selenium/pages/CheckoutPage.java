@@ -10,24 +10,24 @@ import org.selenium.pojoObjects.BillingAddress;
 import org.selenium.pojoObjects.User;
 
 public class CheckoutPage extends BasePage {
-    private By firstnameFld = By.cssSelector("#billing_first_name");
-    private By lastNameFld = By.cssSelector("#billing_last_name");
-    private By countryDropdown = By.id("billing_country");
-    private By addressOneFld = By.cssSelector("#billing_address_1");
-    private By cityFld = By.cssSelector("#billing_city");
-    private By zipCodeFld = By.cssSelector("#billing_postcode");
-    private By stateDropdown = By.id("billing_state");
-    private By emailFld = By.cssSelector("#billing_email");
-    private By placeorderBtn = By.cssSelector("#place_order");
-    private By successMsg = By.cssSelector(".woocommerce-notice");
-    private By directBankTransfer = By.id("payment_method_bacs");
-    private By alternateCountryDropdown = By.id("select2-billing_country-container");
-    private By alternateStateDropdown = By.id("select2-billing_state-container");
-    private By loginLink = By.cssSelector(".showlogin");
-    private By usernameFld = By.cssSelector("#username");
-    private By passwordFld = By.cssSelector("#password");
-    private By loginBtn = By.cssSelector("button[value='Login']");
-    private By overlay = By.cssSelector(".blockUI.blockOverlay");
+    private final By firstnameFld = By.cssSelector("#billing_first_name");
+    private final By lastNameFld = By.cssSelector("#billing_last_name");
+    private final By countryDropdown = By.id("billing_country");
+    private final By addressOneFld = By.cssSelector("#billing_address_1");
+    private final By cityFld = By.cssSelector("#billing_city");
+    private final By zipCodeFld = By.cssSelector("#billing_postcode");
+    private final By stateDropdown = By.id("billing_state");
+    private final By emailFld = By.cssSelector("#billing_email");
+    private final By placeorderBtn = By.cssSelector("#place_order");
+    private final By successMsg = By.cssSelector(".woocommerce-notice");
+    private final By directBankTransfer = By.id("payment_method_bacs");
+    private final By alternateCountryDropdown = By.id("select2-billing_country-container");
+    private final By alternateStateDropdown = By.id("select2-billing_state-container");
+    private final By loginLink = By.cssSelector(".showlogin");
+    private final By usernameFld = By.cssSelector("#username");
+    private final By passwordFld = By.cssSelector("#password");
+    private final By loginBtn = By.cssSelector("button[value='Login']");
+    private final By overlay = By.cssSelector(".blockUI.blockOverlay");
 
     public CheckoutPage(WebDriver driver) {
         super(driver);

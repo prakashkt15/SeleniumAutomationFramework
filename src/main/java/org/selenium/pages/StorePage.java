@@ -7,13 +7,13 @@ import org.selenium.base.BasePage;
 
 public class StorePage extends BasePage {
 
-    private By searchfld = By.name("s");
-    private By searchBtn = By.cssSelector("button[value='Search']");
-    private By title = By.cssSelector(".woocommerce-products-header__title.page-title");
+    private final By searchfld = By.name("s");
+    private final By searchBtn = By.cssSelector("button[value='Search']");
+    private final By title = By.cssSelector(".woocommerce-products-header__title.page-title");
 
     //    This UI element is handled in the method(getAddToCartBtnElement), to handle dynamically
 //    private By addToCartBtn = By.cssSelector("a[aria-label='Add “Faint Blue Jeans” to your cart']");
-    private By clickViewCart = By.cssSelector("a[title='View cart']");
+    private final By clickViewCart = By.cssSelector("a[title='View cart']");
 
 
     public StorePage(WebDriver driver) {

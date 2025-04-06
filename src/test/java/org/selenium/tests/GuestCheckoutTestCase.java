@@ -7,8 +7,6 @@ import org.selenium.pages.HomePage;
 import org.selenium.pages.StorePage;
 import org.selenium.pojoObjects.BillingAddress;
 import org.selenium.pojoObjects.Product;
-import org.selenium.pojoObjects.User;
-import org.selenium.utils.ConfigLoader;
 import org.selenium.utils.JacksonUtils;
 import org.testng.Assert;
 import org.testng.annotations.Test;

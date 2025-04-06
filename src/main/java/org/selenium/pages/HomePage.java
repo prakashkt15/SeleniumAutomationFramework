@@ -6,7 +6,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.selenium.base.BasePage;
 
 public class HomePage extends BasePage {
-    private By storeMenuLink = By.cssSelector("li[id='menu-item-1227'] a[class='menu-link']");
+    private final By storeMenuLink = By.cssSelector("li[id='menu-item-1227'] a[class='menu-link']");
 
     public HomePage(WebDriver driver) {
         super(driver);
